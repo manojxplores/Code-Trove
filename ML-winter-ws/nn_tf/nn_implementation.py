@@ -8,8 +8,8 @@ import pandas as pd
 import numpy as np
 # print(tf.__version__)
 
-df = pd.read_csv('ds1_train.csv')
-df_test = pd.read_csv('ds1_test.csv')
+df = pd.read_csv('nn_tf/ds1_train.csv')
+df_test = pd.read_csv('nn_tf/ds1_test.csv')
 
 x_test = df_test[['x_1', 'x_2']]
 y_test = df_test['y']
