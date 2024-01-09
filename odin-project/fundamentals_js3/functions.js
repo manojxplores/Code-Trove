@@ -47,3 +47,41 @@ function lastLetter(str){
 
 result_3 = lastLetter('abcd')
 console.log(result_3)
+
+
+function checkAge(age){
+    if (age > 18){
+        return true
+    }
+
+    return prompt('Did parents allow u?')
+}
+
+age = 19
+result = checkAge(age)
+console.log(result)
+
+function min(a, b){
+    if(a > b){
+        return b;
+    }else{
+        return a;
+    }
+}
+
+minimum_num = min(1, 2)
+console.log(minimum_num)
+
+function pow(x, n){
+    let result = 1
+
+    for(let i = 0; i < n; i++ ){
+        result *= x 
+    }
+    return result
+}
+
+test_num1 = prompt('Enter the num:')
+test_num2 = prompt('Enter n')
+test = pow(test_num1, test_num2)
+console.log(test)
