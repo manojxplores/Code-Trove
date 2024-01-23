@@ -1,0 +1,25 @@
+h2 {
+    color: red;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+img{
+    border: 2px ;
+    
+}
+.main{
+    border: 2px solid ;
+    width: 50%;
+    background-color: #F5EEE6;
+    padding: 10px;
+    margin: auto;
+}
+
+.time h3{
+    color: red;
+    
+}
