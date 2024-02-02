@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+* {
+  margin: 20px;
+  font-family: 'Encode Sans', sans-serif;
+  align-items: center;
+}
+
+body {
+  background-color: #f8f7f4;
+
+}
+
+.header {
+  margin: 30px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: white;
+}
+
+#main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+#btn {
+  margin: 0 auto;
+  text-align: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+#status {
+  background-color: #3f8363;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border: 0px;
+  color: whitesmoke;
+}
+
+input {
+  border: 0px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
