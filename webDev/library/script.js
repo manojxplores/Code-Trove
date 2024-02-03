@@ -1,12 +1,11 @@
-
-function Book(title, author, num, status){
+function Book(title, author, status){
     this.title = title;
     this.author = author;
-    this.num = num;
     this.status = status;
 }
 
-const myLibrary = []
+const myLibrary = [];
+let bookCounter = 0;
 
 function addBook(book) {
     const main = document.getElementById('main');
@@ -20,28 +19,47 @@ function addBook(book) {
         ul.appendChild(li);
     }
 
+    const edit_container = document.createElement('div');
+    edit_container.classList.add(`${bookCounter++}`);
+    
+    
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
+    removeBtn.addEventListener('click', function() {
+        removeBook(book);
+    });
+
+    edit_container.appendChild(removeBtn);
     container.appendChild(ul);
+    container.appendChild(edit_container);
     main.appendChild(container);
 }
 
 function newBook(){
-    const title = document.getElementById('title').value
+    const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
-    const num = document.getElementById('num').value;
     const status = document.getElementById('status').value;
-    const newBookObj = new Book(title, author, num, status)
+    const newBookObj = new Book(title, author, status);
     myLibrary.push(newBookObj);
-    addBook(newBookObj)
-   
+    addBook(newBookObj);
 }
 
-const book1 = new Book("Project Hail Mary", "Andy Weir", 475, false);
+function removeBook(book) {
+    const index = myLibrary.indexOf(book);
+    if (index !== -1) {
+        myLibrary.splice(index, 1);
+        refreshLibrary();
+    }
+}
 
-const btn = document.getElementById('btn');
+function refreshLibrary() {
+    const main = document.getElementById('main');
+    main.innerHTML = ''; 
 
-const new_btn = document.getElementById('btn')
+    myLibrary.forEach(addBook);
+}
+
+const new_btn = document.getElementById('btn');
 new_btn.addEventListener('click', function(){
-    
     newBook();
-
-})
+});
