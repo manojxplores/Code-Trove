@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js" defer ></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="style.css" rel="stylesheet">
@@ -16,11 +16,20 @@
         <h1>Personalised book library</h1>
     </div>
     <div>
-        <div id = "main">
-            
+        <div id="main">
+            <div class="container">
+                <ul>
+                    <li>Project Hail Mary</li>
+                    <li>Andy Weir</li>
+                    <li>Not Yet</li>
+                </ul>
+                <button>Remove</button>
+                <button>Edit Status</button>
             </div>
-
         </div>
+    </div>
+
+    </div>
     </div>
     <div class="form">
         <form action="">
@@ -30,18 +39,16 @@
             <input type="text" id="author">
             <select name="drop_list" id="status">
                 <option value="Read">Read</option>
-                <option value="Not Yet" >Not Yet</option>
+                <option value="Not Yet">Not Yet</option>
             </select>
-            
+
         </form>
-        
+
     </div>
     <div style="display: flex; justify-content: center;">
         <input type="button" value="Submit" id="btn">
     </div>
-    
+
 </body>
 
 </html>
-
-
