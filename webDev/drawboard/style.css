@@ -1,0 +1,29 @@
+.wrapper{
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+*{
+    margin: 0px;
+}
+
+.opt-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+#color-input{
+    cursor: pointer;
+    border: 0px;
+    padding: 0px;
+}
+
+.gridCol{
+    border:1px solid white;
+    height: 1em;
+    width: 1em;
+}
