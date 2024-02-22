@@ -8,8 +8,5 @@ func main() {
 	fmt.Println(a, b)
 
 	var student1 string = "John"
-	var student2 string
 	fmt.Println(student1)
-	fmt.Println(student2)
-
 }
