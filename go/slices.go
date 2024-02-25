@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	// dynamically-sized
+	// backed by arrays
 	withData := []int{0, 1, 2, 3, 4, 5}
 	fmt.Println(withData[3])
 

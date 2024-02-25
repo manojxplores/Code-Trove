@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main() {
@@ -133,6 +134,12 @@ func main() {
 	num1, num2 := vals()
 	fmt.Println(num1, num2)
 
+	// Structs
+	p1 := Point{"pt1", 12.23, 9.7}
+	p2 := Point{X: 5.6, Y: 10.0}
+	fmt.Println(p1.X, p2.Y)
+	fmt.Println(p1.dist(p2))
+
 }
 
 // Functions
@@ -143,4 +150,21 @@ func sum(a int, b int) int {
 // Multiple return values
 func vals() (int, int) {
 	return 45, 6
+}
+
+// Structs
+type Point struct {
+	// Fields
+	label string
+	X     float64
+	Y     float64
+}
+
+// Struct Methods
+func (p1 Point) dist(p2 Point) float64 {
+	return math.Sqrt(sq(p1.X-p2.X) + sq(p1.Y-p2.Y))
+}
+
+func sq(n float64) float64 {
+	return n * n
 }
