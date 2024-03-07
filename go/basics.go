@@ -1,5 +1,6 @@
-package main
+package main //collection of files
 
+// package from go standard library
 import (
 	"fmt"
 	"math"
